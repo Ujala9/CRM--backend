@@ -3,11 +3,12 @@ const { initializeDatabase } = require("./db/db.connect");
 const Lead = require("./models/lead.model");
 const Agent = require("./models/salesAgent.model");
 
+const cors = require("cors");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const cors = require("cors");
 
 initializeDatabase();
 
